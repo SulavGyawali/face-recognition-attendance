@@ -3,14 +3,6 @@ import cv2
 import numpy as np
 import csv
 from datetime import datetime
-from flask import Flask
-
-app = Flask(__name__)
-@app.route("/")
-def hello_world():
-    return "<p>Hello World</p>"
-
-
 
 def main():
     video_capture = cv2.VideoCapture(0)
